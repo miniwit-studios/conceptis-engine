@@ -6,7 +6,7 @@ before_script:
   - git submodule update --init --recursive
   - git submodule foreach yarn
   - git submodule foreach yarn build
-  - cd frontend
+  - cd game
   - yarn
 
 script:
