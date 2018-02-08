@@ -3208,6 +3208,7 @@ var StartScene = (function (_super) {
     function StartScene() {
         var _this = _super.call(this) || this;
         _this.initialized = false;
+        _this.blue = 0;
         return _this;
     }
     StartScene.prototype.start = function () {
@@ -3217,6 +3218,13 @@ var StartScene = (function (_super) {
         this.initialized = true;
         var camera = this.camera = new engine_1.Camera(this);
         camera.clearColor = 'black';
+    };
+    StartScene.prototype.tick = function (delta) {
+        _super.prototype.tick.call(this, delta);
+        this.blue += delta * 120;
+        var actualBlue = Math.abs(Math.floor(this.blue % 512) - 256);
+        if (this.initialized)
+            this.camera.clearColor = "rgb(0, 0, " + actualBlue + ")";
     };
     return StartScene;
 }(engine_1.GameScene));
