@@ -1,9 +1,9 @@
-import { Game } from 'engine';
+import { Game, GameOptions } from 'engine';
 import { StartScene } from './scenes/start.scene';
 
 export class MyGame extends Game {
-    constructor(framesPerSecond = 30) {
-        super(framesPerSecond);
+    constructor(opts?: GameOptions) {
+        super(opts);
     }
 
     start() {
