@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "declaration": true,
+        "paths": {
+            "*": ["./node_modules/*", "./src/*"],
+            "engine": ["../engine"]
+        },
+        "types": [
+            "core-js",
+            "lodash"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "bower_components",
+        "dist"
+    ]
+}

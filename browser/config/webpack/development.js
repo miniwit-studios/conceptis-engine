@@ -9,13 +9,17 @@ let $awesomeTypescript = {
     loader: 'awesome-typescript-loader'
 };
 
+let $raw = {
+    loader: 'raw-loader'
+};
+
 let devConfig = {
     entry: {
         'main': './src/main.browser.ts'
     },
 
     output: {
-        path: path.resolve(__dirname, '../../../docs/scripts')
+        path: path.resolve(__dirname, '../../dist/scripts')
     },
 
     plugins: [
@@ -24,7 +28,8 @@ let devConfig = {
 
     module: {
         loaders: [
-            { test: /\.ts$/, loaders: [$awesomeTypescript], exclude: /\.spec\.ts$/ }
+            { test: /\.ts$/, loaders: [$awesomeTypescript], exclude: /\.spec\.ts$/ },
+            { test: /\.glslx$/, loaders: [$raw] }
         ]
     },
 

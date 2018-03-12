@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Launch index.html (disable sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "sourceMaps": true,
+            "smartStep": true,
+            "url": "http://localhost:8080",
+            "sourceMapPathOverrides": {
+                "webpack:///../engine/*": "${workspaceRoot}/../engine/*",
+                "webpack:///../core/*": "${workspaceRoot}/../core/*",
+                "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
+                "webpack:///./src/*": "${workspaceRoot}/../core/src/*"
+            }
+        }
+    ]
+}

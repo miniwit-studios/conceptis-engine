@@ -6,14 +6,13 @@ html, body, .canvas-container {
 body {
     margin: 0;
     background: black;
+    overflow: hidden;
 }
 
-.fixed-size .canvas-container {
-}
 .fixed-size .canvas-pad {
     height: 50%;
 }
-.fixed-size canvas {
+.fixed-size .canvas-container > canvas {
     margin: 0 auto;
     margin-top: -240px;
     width: 640px;
@@ -22,12 +21,10 @@ body {
     display: block;
 }
 
-.full-size .canvas-container {
-}
 .full-size .canvas-pad {
     height: 0;
 }
-.full-size canvas {
+.full-size .canvas-container > canvas {
     margin: 0;
     width: 100vw;
     height: 100vh;
