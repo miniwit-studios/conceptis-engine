@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "core"
+		},
+		{
+			"path": "browser"
+		},
+		{
+			"path": "engine"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
