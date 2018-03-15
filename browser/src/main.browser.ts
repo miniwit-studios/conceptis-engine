@@ -1,8 +1,8 @@
-import { JourneyTdGame } from 'core';
+import { GenericGame } from 'core';
 import { BrowserPlatformAdapter } from './browser-platform-adapter';
 
 let adapter = new BrowserPlatformAdapter();
-let game = new JourneyTdGame({
+let game = new GenericGame({
     framesPerSecond: 30,
     platformAdapter: adapter
 });

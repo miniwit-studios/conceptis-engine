@@ -1,12 +1,12 @@
 import { EventQueue, KeyboardAbstractButtonProvider, GamepadAbstractButtonProvider } from 'engine';
-import { JourneyTdGame, PlatformAdapter } from 'core';
+import { GenericGame, PlatformAdapter } from 'core';
 
 export class BrowserPlatformAdapter extends PlatformAdapter {
     constructor() {
         super();
     }
     
-    async init(game: JourneyTdGame) {
+    async init(game: GenericGame) {
         let result = await super.init(game);
         if (!result) return false;
         

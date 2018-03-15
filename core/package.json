@@ -1,7 +1,7 @@
 {
-    "name": "@aboveyou00/journey-td-game",
+    "name": "@aboveyou00/html5-game-seed",
     "version": "0.0.0",
-    "description": "Journey TD (Core)",
+    "description": "Generic Game (Core)",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "contributors": [
@@ -58,6 +58,6 @@
     },
     "license": "MIT",
     "repository": {
-        "url": "https://github.com/aboveyou00/journey-td-game"
+        "url": "https://github.com/aboveyou00/html5-game-seed"
     }
 }

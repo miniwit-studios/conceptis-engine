@@ -1,5 +1,3 @@
-# Journey TD
+# HTML5 Game Seed
 
-Project codename "Journey TD" - an unnamed tower defense game.
-
-Copyright &copy; 2018 Miniwit Studios.
+A game seed using HTML5 game technologies.

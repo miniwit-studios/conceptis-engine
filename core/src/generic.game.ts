@@ -2,12 +2,12 @@ import { Game, GameOptions } from 'engine';
 import { StartScene } from './scenes/start/start.scene';
 import { PlatformAdapter } from './platforms/platform-adapter';
 
-export type JourneyTdGameOptions = GameOptions & {
+export type GenericGameOptions = GameOptions & {
     platformAdapter: PlatformAdapter
 };
 
-export class JourneyTdGame extends Game {
-    constructor(opts: JourneyTdGameOptions) {
+export class GenericGame extends Game {
+    constructor(opts: GenericGameOptions) {
         super(opts);
         
         this._platformAdapter = opts.platformAdapter;

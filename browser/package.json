@@ -1,7 +1,7 @@
 {
-    "name": "@aboveyou00/journey-td-game",
+    "name": "@aboveyou00/html5-game-seed",
     "version": "0.0.1",
-    "description": "Journey TD (Browser)",
+    "description": "Generic Game (Browser)",
     "contributors": [
         {
             "name": "Brandon Slade",
@@ -51,6 +51,6 @@
     },
     "license": "MIT",
     "repository": {
-        "url": "https://github.com/aboveyou00/journey-td-game"
+        "url": "https://github.com/aboveyou00/html5-game-seed"
     }
 }

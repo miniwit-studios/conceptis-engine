@@ -1,10 +1,10 @@
 import { EventQueue, AudioSourceObject } from 'engine';
-import { JourneyTdGame } from '../journey-td.game';
+import { GenericGame } from '../generic.game';
 
 export abstract class PlatformAdapter {
     constructor() { }
     
-    init(game: JourneyTdGame): boolean | Promise<void | boolean> {
+    init(game: GenericGame): boolean | Promise<void | boolean> {
         this._game = game;
         return true;
     }
@@ -13,8 +13,8 @@ export abstract class PlatformAdapter {
     }
     registerAbstractButtons(events: EventQueue) { }
     
-    private _game: JourneyTdGame;
-    protected get game(): JourneyTdGame {
+    private _game: GenericGame;
+    protected get game(): GenericGame {
         return this._game;
     }
 }
