@@ -11,11 +11,10 @@ export class GenericGame extends Game {
         super(opts);
         
         this._platformAdapter = opts.platformAdapter;
-        
-        this.initAsync();
     }
     
-    private async initAsync() {
+    private _isInitialized = false;
+    async init(): Promise<void> {
         if (this._isInitialized) throw new Error(`This game has already been initialized!`);
         
         let result: boolean | void;
@@ -28,27 +27,6 @@ export class GenericGame extends Game {
         this.platformAdapter.registerAbstractButtons(this.eventQueue);
         
         this._isInitialized = true;
-        if (this._afterInit) {
-            let ainit = this._afterInit;
-            this._afterInit = null;
-            ainit();
-        }
-    }
-    
-    private _isInitialized = false;
-    private _afterInit: (() => void) | null;
-    doAfterInit(act: () => void) {
-        if (this._isInitialized) act();
-        else {
-            if (this._afterInit) {
-                let ainit = this._afterInit;
-                this._afterInit = () => {
-                    ainit();
-                    act();
-                };
-            }
-            else this._afterInit = act;
-        }
     }
     
     private _platformAdapter: PlatformAdapter;
