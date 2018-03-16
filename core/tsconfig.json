@@ -7,7 +7,7 @@
         "declaration": true,
         "paths": {
             "*": ["./node_modules/*", "./src/*"],
-            "engine": ["../engine"]
+            "engine": ["../engine/src"]
         },
         "types": [
             "core-js",

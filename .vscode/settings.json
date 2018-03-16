@@ -11,8 +11,7 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "core/dist": true,
-        "engine/dist": true,
+        "**/dist": true,
         "**/node_modules": true
     }
 }
