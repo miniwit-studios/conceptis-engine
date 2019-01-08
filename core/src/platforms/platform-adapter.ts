@@ -1,4 +1,4 @@
-import { EventQueue, AudioSourceObject } from 'engine';
+import { EventQueue } from 'engine';
 import { GenericGame } from '../generic.game';
 
 export abstract class PlatformAdapter {

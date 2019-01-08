@@ -68,39 +68,39 @@ export class TicTacLogicPuzzle {
         this._fixed.set(x, y, true);
     }
     
-    static easy6x6 = TicTacLogicPuzzle.create('\
-  x*x*      \
-          o*\
-x*    o*    \
-  o*        \
-    x*  o*  \
-        o*  ');
+    static easy6x6 = TicTacLogicPuzzle.create(
+'  x*x*      \n' +
+'          o*\n' +
+'x*    o*    \n' +
+'  o*        \n' +
+'    x*  o*  \n' +
+'        o*  ');
     
-    static easy8x10 = TicTacLogicPuzzle.create('\
-        o*      \
-  x*    o*      \
-      x*        \
-x*              \
-x*            o*\
-        o*    o*\
-            x*  \
-                \
-  x*    o*    x*\
-o*x*            ');
+    static easy8x10 = TicTacLogicPuzzle.create(
+'        o*      \n' +
+'  x*    o*      \n' +
+'      x*        \n' +
+'x*              \n' +
+'x*            o*\n' +
+'        o*    o*\n' +
+'            x*  \n' +
+'                \n' +
+'  x*    o*    x*\n' +
+'o*x*            ');
     
-    static easy10x14 = TicTacLogicPuzzle.create('\
-      o*            \
-  x*x*      x*  x*  \
-        o*          \
-          x*        \
-  o*  o*          o*\
-x*              x*  \
-      o*  o*        \
-      o*    x*      \
-            x*    o*\
-x*  o*    x*        \
-  x*  x*            \
-              o*o*  \
-        o*          \
-    o*    x*x*  x*  ');
+    static easy10x14 = TicTacLogicPuzzle.create(
+'      o*            \n' +
+'  x*x*      x*  x*  \n' +
+'        o*          \n' +
+'          x*        \n' +
+'  o*  o*          o*\n' +
+'x*              x*  \n' +
+'      o*  o*        \n' +
+'      o*    x*      \n' +
+'            x*    o*\n' +
+'x*  o*    x*        \n' +
+'  x*  x*            \n' +
+'              o*o*  \n' +
+'        o*          \n' +
+'    o*    x*x*  x*  ');
 }
