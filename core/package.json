@@ -1,7 +1,7 @@
 {
-    "name": "@aboveyou00/html5-game-seed",
+    "name": "@aboveyou00/conceptis-engine",
     "version": "0.0.0",
-    "description": "Generic Game (Core)",
+    "description": "Conceptis puzzle client, solver, and generator.",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "contributors": [
@@ -58,6 +58,6 @@
     },
     "license": "MIT",
     "repository": {
-        "url": "https://github.com/aboveyou00/html5-game-seed"
+        "url": "https://github.com/miniwit-studios/conceptis-generator"
     }
 }

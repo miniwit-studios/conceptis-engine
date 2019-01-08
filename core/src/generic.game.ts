@@ -1,5 +1,5 @@
 import { Game, GameOptions } from 'engine';
-import { StartScene } from './scenes/start/start.scene';
+import { TicTacLogicScene } from './scenes/tic-tac-logic/tic-tac-logic.scene';
 import { PlatformAdapter } from './platforms/platform-adapter';
 
 export type GenericGameOptions = GameOptions & {
@@ -36,6 +36,6 @@ export class GenericGame extends Game {
     
     start() {
         super.start();
-        this.changeScene(new StartScene());
+        this.changeScene(new TicTacLogicScene());
     }
 }

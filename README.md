@@ -1,3 +1,3 @@
-# HTML5 Game Seed
+# Conceptis Engine
 
-A game seed using HTML5 game technologies.
+A conceptis puzzle client, solver, and generator, all rolled into one.
