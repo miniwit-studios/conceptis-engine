@@ -14,6 +14,8 @@ let $raw = {
 };
 
 let devConfig = {
+    mode: 'development',
+
     entry: {
         'main': './src/main.browser.ts'
     },
@@ -27,7 +29,7 @@ let devConfig = {
     ],
 
     module: {
-        loaders: [
+        rules: [
             { test: /\.ts$/, loaders: [$awesomeTypescript], exclude: /\.spec\.ts$/ },
             { test: /\.glslx$/, loaders: [$raw] }
         ]
